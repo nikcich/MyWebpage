@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #4a7387;
+}
+
+::selection {
+  color: white;
+  background: #4a7387;
+}
+
 header{
   background: white;
 }
