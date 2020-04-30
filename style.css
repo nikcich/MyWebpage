@@ -21,9 +21,11 @@ nav ul li{
   color: white;
   margin: 5px;
   padding: 5px;
+  border-radius: 4px;
 }
 
 h3{
+  font-size: 50px;
   display: inline;
   padding: 20px 20px 0 20px;
   text-transform: : uppercase;
