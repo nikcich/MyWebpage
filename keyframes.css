@@ -1,0 +1,98 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  line-height: 1.5;
+  text-align: center;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 300px;
+}
+
+p{
+  padding: 30px 0px;
+}
+
+.Menu{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  border: #fff 1px solid;
+  width: 200px;
+  opacity: 1;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.Menu:hover{
+  transform: rotateY(180deg);
+}
+
+.MenuHolder{
+  list-style-type: none;
+  display: inline-block;
+  background: #6ea8c4;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  transition-property: transform, background, border-radius;
+  transition-duration: 1s;
+}
+
+.MenuHolder:hover{
+  background: #4a7387;
+  border-radius: 10px;
+}
+
+.btn{
+  font-size: 25px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem, 2rem;
+  border: #fff 1px solid;
+  width: 200px;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.btn:hover{
+  transform: rotateX(180deg);
+}
+
+#content{
+  font-size: 25px;
+  position: relative;
+  animation-name: content;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes content{
+  0%{
+    left: -3000px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes btn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
