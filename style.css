@@ -72,6 +72,8 @@ h1{
 
 .Project1{
   background-image: url("brain.png");
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
   width: 600px;
   height: 600px;
   float: left;
