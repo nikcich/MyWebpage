@@ -33,6 +33,10 @@ h3{
   color: #6ea8c4;
 }
 
+a{
+  border-radius: 6px;
+}
+
 nav ul li a{
   color: white;
   border-radius: 6px;
