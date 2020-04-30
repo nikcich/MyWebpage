@@ -64,11 +64,18 @@ body{
   background-image: url("brain.png");
   background-repeat: no-repeat;
   background-size: 600px 600px;
+  filter: grayscale(100%);
   width: 600px;
   height: 600px;
   float: left;
   margin: 20px;
   border-radius: 20px;
+  transition-property: filter;
+  transition-duration: 0.5s;
+}
+
+.Project1:hover{
+  filter: grayscale(0%);
 }
 
 .Project2{
