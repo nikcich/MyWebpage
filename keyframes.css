@@ -48,7 +48,7 @@ p{
 .MenuHolder:hover{
   background: #4a7387;
   border-radius: 10px;
-  transform: rotateY(360deg);
+  transform: rotateY(30deg);
 }
 
 .btn{
