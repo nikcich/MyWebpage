@@ -6,6 +6,35 @@
   box-sizing: border-box;
 }
 
+header{
+  background: white;
+}
+
+nav ul{
+  margin: 0;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  background: #6ea8c4;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+
+h3{
+  display: inline;
+  padding: 20px 20px 0 20px;
+  text-transform: : uppercase;
+  letter-spacing: 2px;
+  color: #6ea8c4;
+}
+
+nav ul li a{
+  color: white;
+}
+
 html{
   front-size: 10px;
   font-family: "Lato", Arial, sans-serif;
