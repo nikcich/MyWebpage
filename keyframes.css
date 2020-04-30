@@ -61,8 +61,8 @@ p{
   width: 200px;
   opacity: 0;
   animation-name: btn;
-  animation-duration: 3s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   transition-property: transform;
   transition-duration: 1s;
@@ -76,7 +76,7 @@ p{
   font-size: 25px;
   position: relative;
   animation-name: content;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
