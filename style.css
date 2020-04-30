@@ -47,22 +47,22 @@ body{
   width: 100%;
   height: 100vh;
   color: #fff;
-  background: linear-gradient(-45deg, #0C2048, #65BDC9,#4BADA1);
+  background: linear-gradient(-45deg, #73528B, #5973B0,#428ABA, #25ABB6, #4FC789);
   background-size: 400% 400%;
   position: relative;
-  animation: change 5s ease-in-out infinite;
+  animation: change 3s ease-in-out infinite;
 }
 
 h1{
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: : uppercase;
-  letter-spacing: 2px;
-  border: 3px solid #fff;
+  letter-spacing: 100%;
+  border: 2px solid #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -75%);
-  padding: 3rem 5rem;
+  padding: 25px 25px;
 }
 
 secondBody{
