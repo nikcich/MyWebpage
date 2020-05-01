@@ -34,7 +34,7 @@
   animation-duration: 2s;
   animation-fill-mode: forwards;
   background-color: white;
-
+  border-radius: 15px 50px;
   color: black;
   filter: opacity(0.875);
 
