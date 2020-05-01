@@ -16,7 +16,8 @@ p{
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  border: #fff 1px solid;
+  font: Arial;
+  font-weight: bold;
   width: 200px;
   opacity: 1;
   transition-property: transform;
@@ -41,8 +42,17 @@ p{
 
 .MenuHolder:hover{
   background: #4a7387;
-  border-radius: 10px;
-  transform: rotateY(30deg);
+  border-radius: 8px;
+}
+
+#home:hover{
+  transform: rotateY(30deg) rotateX(-30deg);
+}
+#wip:hover{
+  transform: rotateX(45deg);
+}
+#prog:hover{
+  transform: rotateY(-30deg) rotateX(-30deg);
 }
 
 
