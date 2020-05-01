@@ -16,9 +16,58 @@
   background: #4a7387;
 }
 
+.container{
+  max-width: 900px;
+  margin: auto;
+}
+
+#glass{
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+#content{
+  font-size: 25px;
+  position: relative;
+  animation-name: content;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background-color: white;
+
+  color: black;
+  filter: opacity(0.875);
+
+  padding: 30px 30px;
+}
+
+.btn{
+  font-size: 30px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem, 2rem;
+  border: #fff 2px solid;
+  width: 200px;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1.5s;
+}
+
+.btn:hover{
+  transform: rotateX(180deg);
+}
+
 header{
+  opacity: 0.875;
   background: white;
 }
+
+
 
 nav ul{
   margin: 0;
@@ -43,6 +92,7 @@ h3{
   color: #6ea8c4;
 }
 
+
 a{
   border-radius: 6px;
 }
@@ -55,107 +105,16 @@ nav ul li a{
 html{
   front-size: 10px;
   font-family: "Lato", Arial, sans-serif;
-  filter: blur(3px);
-  animation-name: blurAll;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes blurAll{
-  0%{
-    filter: blur(5px) brightness(200%) contrast(200%);
-  }
-  100%{
-    filter: blur(0px) brightness(100%) contrast(100%);
-  }
 }
 
 body{
   width: 100%;
   height: 100vh;
   color: #fff;
-  background: linear-gradient(-45deg, #73528B, #5973B0,#428ABA, #25ABB6, #4FC789);
-  background-size: 400% 400%;
-  position: relative;
-  animation: change 3s ease-in-out infinite;
-}
-
-.ham{
-
-}
-
-.hamburger{
-  width: 50px;
-  height: 35px;
-  float: left;
-  margin: 20px;
-}
-
-.ham:hover{
-  background-color: #4a7387;
-}
-
-.patty{
-
-  background-color: #6ea8c4;
-  background-size: 20px 8px;
-  width: 35px;
-  height: 6px;
-  float: left;
-  margin: 2px;
-  transition-property: filter;
-  transition-duration: 0.5s;
-  border-radius: 5px;
-}
-
-.ProjectHolder{
-  margin: 0 auto;
-  width: 620px;
-}
-
-.Project1{
-  background-image: url("brain.png");
+  background-image: url("program2.jpg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 600px 600px;
-  filter: grayscale(100%) blur(3px);
-  width: 600px;
-  height: 600px;
-  float: left;
-  margin: 20px;
-  border-radius: 20px;
-  transition-property: filter;
-  transition-duration: 0.5s;
-}
-
-.Project1:hover{
-  filter: grayscale(0%);
-}
-
-.Project2{
-  background: #999;
-  width: 600px;
-  height: 600px;
-  float: left;
-  margin: 20px;
-  border-radius: 20px;
-}
-
-.ViewButton{
-  margin: 540px auto;
-  width: 130px;
-  height: 30px;
-}
-
-.ProjectHolder a{
-  text-align: center;
-  list-style-type: none;
-  display: inline-block;
-  background: #6ea8c4;
-  color: white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 4px;
-  color: white;
+  background-attachment: fixed;
 }
 
 @keyframes change{

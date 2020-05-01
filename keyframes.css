@@ -8,12 +8,6 @@ body{
   text-align: center;
 }
 
-.container{
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 300px;
-}
-
 p{
   padding: 30px 0px;
 }
@@ -51,34 +45,6 @@ p{
   transform: rotateY(30deg);
 }
 
-.btn{
-  font-size: 25px;
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  padding: 1rem, 2rem;
-  border: #fff 1px solid;
-  width: 200px;
-  opacity: 0;
-  animation-name: btn;
-  animation-duration: 2s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  transition-property: transform;
-  transition-duration: 1s;
-}
-
-.btn:hover{
-  transform: rotateX(180deg);
-}
-
-#content{
-  font-size: 25px;
-  position: relative;
-  animation-name: content;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
 
 @keyframes content{
   0%{
