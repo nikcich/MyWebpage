@@ -28,6 +28,7 @@
 }
 
 #content{
+  font-weight: bold;
   font-size: 25px;
   position: relative;
   animation-name: content;
@@ -36,7 +37,7 @@
   background-color: white;
   border-radius: 15px 50px;
   color: black;
-  filter: opacity(0.875);
+  filter: opacity(0.9);
 
   padding: 30px 30px;
 }
