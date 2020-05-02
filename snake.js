@@ -1,7 +1,7 @@
 class Snake{
   constructor(){
-    this.xp = 500;
-    this.yp = 300;
+    this.xp = 325;
+    this.yp = 325;
     this.xv = 0;
     this.yv = 0;
     this.survived = 0;
@@ -49,8 +49,8 @@ class Snake{
   die(){
     this.xv = 0;
     this.yv = 0;
-    this.xp = 500;
-    this.yp = 300;
+    this.xp = 325;
+    this.yp = 325;
     this.xv = 1;
     this.yv = 1;
     this.dead = false;
