@@ -29,57 +29,23 @@ document.addEventListener("DOMContentLoaded", function(){
     alldie = true;
   })
 
-  for(let i =0; i < pop; i++){
-    snakes[i] = new Snake();
-  }
-
+  let population = new Population(pop, mutrate, width, height);
+  population.createPop();
 
   function draw(){
-
-    let deathcount = 0;
-    let endit = false;
-    for(let snake of snakes){
-
-      snake.update();
-      let hit = snake.touchSides(width, height, snakeSize);
-      if(hit){
-          snake.dead = true;
-          deathcount++;
-      }
-      if(snake.survived >= maxLifespan){
-        endit = true;
-      }
-    }
-
-    if(deathcount >= snakes.length || alldie || deathcount/snakes.length >= 0.98 || endit){
+    population.update(maxLifespan);
+    if(population.allDead() || alldie){
 
       gennum++;
-      let best = snakes[0];
-      let avglife = 0;
-      for(let i=1; i < snakes.length; i++){
-        let surv = snakes[i].survived;
-        avglife = avglife + snakes[i].survived;
-        if(surv > best.survived){
-          best = snakes[i];
-        }
-      }
+      population.evaluate();
 
-      avglife = avglife/pop; // average life
-
-      if(best.survived > bestgen && endit == false && alldie == false){
-        bestgen = best.survived;
+      if(population.best.survived > bestgen && alldie == false){
+        bestgen = population.best.survived;
       }
-      maxLifespan = maxLifespanbase + bestgen;
+      maxLifespan = maxLifespanbase + population.best.survived;
       alldie = false;
-      endit = false;
 
-      for(let snake of snakes){
-        if(snake.survived < avglife || snake.survived >= maxLifespan){
-          snake.brain = best.brain;
-        }
-        snake.mutate(mutrate);
-        snake.die();
-      }
+      population.finishGen();
     }
   }
 
@@ -95,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
       draw();
     }
     ctx.clearRect(0,0, width, height);
-    for(snake of snakes){
+    for(let snake of population.snakes){
       //ctx.fillStyle = 'rgb(255, 0, 0)';
       let color = ['rgb()', 'rgb()','rgb()','rgb()','rgb()'];
       ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';

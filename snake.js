@@ -10,7 +10,6 @@ class Snake{
     this.dead = false;
 
   }
-
   touchSides(width, height, size){
     if(this.xp <= 0 || this.yp <= 0){ // touches top or left
       return true;
