@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(){
       endit = false;
 
       for(let snake of snakes){
-        if(snake.survived < avglife){
+        if(snake.survived < avglife || snake.survived >= maxLifespan){
           snake.brain = best.brain;
         }
         snake.mutate(mutrate);
