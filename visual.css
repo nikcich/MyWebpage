@@ -1,0 +1,217 @@
+.gridcont{
+  width: 1000px;
+  height: 750px;
+  margin: auto;
+}
+
+#board{
+  position: relative;
+  width: 250px;
+  height: 650px;
+  background-color: black;
+  right: -650px;
+  top: -700px;
+  margin: auto;
+}
+
+.data{
+  display: grid;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#NOTIFICATION{
+  font-weight: bold;
+  color: red;
+}
+
+#online{
+  font-weight: bold;
+  color: green;
+}
+
+#grid{
+  position: relative;
+  background-color: #36393F;
+}
+
+#discTop{
+  background-color: #202225;
+  height: 4%;
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+
+#leftMenu{
+  background-color: #202225;
+  height: 96%;
+  width: 50px;
+  float: left;
+  text-align: left;
+}
+
+.dot {
+  height: 45px;
+  width: 45px;
+  background-color: #bbb;
+  border-radius: 50%;
+  background-image: url("irish.png");
+  display: block;
+}
+
+.dot2 {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  Right: -30px;
+  top: 30px;
+  display: block;
+}
+
+#secndmenu{
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 96%;
+  width: 150;
+  background-color: #2F3136;
+}
+.servername{
+  position: relative;
+  height: 60px;
+  width: 80%;
+  Right: -10%;
+  font-weight: bold;
+  float: center;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  padding-bottom: 20px;
+}
+.Section{
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 8px;
+  color: #8F9297;
+  position: relative;
+  height: 30px;
+  width: 80%;
+  Right: -10%;
+  float: center;
+  text-align: left;
+  border-radius: 5px;
+  display: block;
+}
+.Section:hover{
+  cursor: pointer;
+  color: white;
+}
+.channels{
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 6px;
+  color: #8F9297;
+  position: relative;
+  height: 30px;
+  width: 80%;
+  Right: -10%;
+  float: center;
+  text-align: left;
+  border-radius: 5px;
+  display: block;
+}
+.channels:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #36393F;
+}
+
+#middle{
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 96%;
+  width: 650px;
+}
+
+#MessageBox{
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 90%;
+  width: 650px;
+}
+
+.Message{
+  top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 6px;
+  color: #8F9297;
+  background-color: #41444B;
+  position: relative;
+  height: 30px;
+  width: 95%;
+  float: center;
+  text-align: left;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.msg{
+  top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 8px;
+  padding-top: 6px;
+  color: #8F9297;
+  position: relative;
+  height: 75px;
+  width: 100%;
+  float: center;
+  text-align: left;
+  display: inline-block;
+}
+
+.msg:hover{
+  background-color: #32353B;
+}
+
+.msg > .name{
+  Right: -60px;
+  position: relative;
+  color: white;
+}
+
+.msg > .msgtxt{
+  font-size: 12px;
+  Right: -70px;
+  top: -45px;
+  position: relative;
+  color: white;
+}
+
+.msg > .msgimg{
+  top: -20px;
+  position: relative;
+  height: 45px;
+  width: 45px;
+  background-color: #bbb;
+  border-radius: 50%;
+  background-image: url("irish.png");
+  display: block;
+}
+
+#rightmenu{
+  background-color: #2F3136;
+  height: 96%;
+  width: 115px;
+  float: left;
+  text-align: left;
+}
