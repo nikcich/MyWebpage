@@ -1,5 +1,24 @@
 @import "https://fonts.googleapis.com/css?family=Lato:100";
 
+
+
+#PageHeader{
+        
+  width: 100%;
+  height: 10vw;
+  background-color: #1F2833;
+  position: sticky;
+}
+
+#PageHead{
+  
+  width: 100%;
+  height: 5vw;
+  background-color: #1F2833;
+  position: sticky;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -11,39 +30,78 @@
   background: #4a7387;
 }
 
+h3{
+  font-size: 3vw;
+  color: #B5B9BB;
+}
+
 ::selection {
   color: white;
   background: #4a7387;
 }
 
 .container{
-  max-width: 900px;
+  max-width: 70vw;
   margin: auto;
 }
 
-#content{
+.MenuHolder:hover{
+  background: #4a7387;
+  border-radius: 8px;
+}
+
+.MenuHolder{
+  list-style-type: none;
+  display: inline-block;
+  background: #7DFEF0;
+  color: black;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  transition-property: transform, background, border-radius;
+  transition-duration: .3s;
+}
+
+.Menu{
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font: Arial;
   font-weight: bold;
-  font-size: 25px;
+  width: 200px;
+  opacity: 1;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+#content{
+  height: 23vw;
+  width: 50vw;
+  font-weight: bold;
+  font-size: 1.8vw;
   position: relative;
   animation-name: content;
   animation-duration: 2s;
+  top: 5vw;
+  padding-bottom: 10vw;
   animation-fill-mode: forwards;
-  background-color: white;
+  background-color: #202833;
   border-radius: 15px 50px;
-  color: black;
-  filter: opacity(0.9);
-
+  color: #B5B9BB;
+  filter: opacity(0.98);
   padding: 30px 30px;
+  overflow-y: hidden;
 }
 
 .btn{
-  font-size: 60px;
+  font-size: 5vw;
   font-weight: bold;
   display: inline-block;
-  color: #fff;
+  color: #B5B9BB;
   text-decoration: none;
   padding: 1rem, 2rem;
-  border: #fff 2px solid;
+  border: #B5B9BB 2px solid;
+  border-radius: 0.5vw;
   max-width: 600;
   opacity: 0;
   animation-name: btn;
@@ -51,7 +109,7 @@
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
   transition-property: transform;
-  transition-duration: 1.5s;
+  transition-duration: 0.75s;
 }
 
 .btn:hover{
@@ -59,8 +117,12 @@
 }
 
 header{
-  opacity: 0.875;
-  background: white;
+  opacity: 0.95;
+  background: #202833;
+}
+
+#glass{
+  height: 30vw;
 }
 
 
@@ -123,4 +185,103 @@ body{
   100%{
     background-position: 0 50%;
   }
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+  .container{
+    width: 100vw;
+    height: 200vw;
+  }
+
+  #PageHeader{
+        
+    width: 100%;
+    height: 20vw;
+    background-color: #1F2833;
+    position: sticky;
+  }
+  
+  #PageHead{
+    
+    width: 100%;
+    height: 20vw;
+    background-color: #1F2833;
+    position: sticky;
+  }
+
+  .MenuHolder{
+    list-style-type: none;
+    display: inline-block;
+    background: #7DFEF0;
+    color: black;
+    margin: 5px;
+    height: 8vw;
+    width: 25vw;
+    padding: 5px;
+    border-radius: 4px;
+    transition-property: transform, background, border-radius;
+    transition-duration: .3s;
+  }
+
+  .MenuHolder:hover{
+    background: #4a7387;
+    border-radius: 8px;
+  }
+  
+  .Menu{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font: Arial;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+  
+  #content{
+    height: 50vw;
+    width: 100vw;
+    font-weight: bold;
+    font-size: 3vw;
+    position: relative;
+    animation-name: content;
+    animation-duration: 2s;
+    top: 5vw;
+    padding-bottom: 10vw;
+    animation-fill-mode: forwards;
+    background-color: #1F2833;
+    border-radius: 15px 50px;
+    color: #B5B9BB;
+    filter: opacity(0.98);
+    padding: 30px 30px;
+    overflow-y: hidden;
+  }
+  
+  .btn{
+    position: relative;
+    top: 35vw;
+    font-size: 10vw;
+    font-weight: bold;
+    display: inline-block;
+    color: #B5B9BB;
+    padding: 1vw, 2vw;
+    border: #B5B9BB 2px solid;
+    border-radius: 1vw;
+    width: 70vw;
+    animation-name: btn;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 0.75s;
+  }
+
 }
