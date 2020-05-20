@@ -1,0 +1,72 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  line-height: 1.5;
+  text-align: center;
+}
+
+p{
+  padding: 30px 0px;
+}
+
+.Menu{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font: Arial;
+  font-weight: bold;
+  width: 200px;
+  opacity: 1;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+
+.MenuHolder{
+  list-style-type: none;
+  display: inline-block;
+  background: #6ea8c4;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  transition-property: transform, background, border-radius;
+  transition-duration: 1s;
+}
+
+.MenuHolder:hover{
+  background: #4a7387;
+  border-radius: 8px;
+}
+
+#home:hover{
+  transform: rotateY(30deg) rotateX(-30deg);
+}
+#wip:hover{
+  transform: rotateX(45deg);
+}
+#prog:hover{
+  transform: rotateY(-30deg) rotateX(-30deg);
+}
+
+
+@keyframes content{
+  0%{
+    left: -3000px;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@keyframes btn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
